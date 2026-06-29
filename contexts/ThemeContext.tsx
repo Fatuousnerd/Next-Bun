@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeType } from "@/config/Interfaces";
+import { ThemeType } from "@/config/Types";
 import { createContext, ReactNode, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 
