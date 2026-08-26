@@ -1,16 +1,19 @@
+import { PostgrestError } from "@supabase/supabase-js";
+import { AxiosError } from "axios";
+
 export interface ThemeType {
-  theme: string;
-  toggleTheme: () => void;
+	theme: string;
+	toggleTheme: () => void;
 }
 
 export type LoadingState = {
-  loading: Record<string, boolean>;
-  setLoading: (key: string, value: boolean) => void;
+	loading: Record<string, boolean>;
+	setLoading: (key: string, value: boolean) => void;
 };
 
 export type ErrorType = PostgrestError | AxiosError | TypeError | string | null;
 
 export type ErrorState = {
-  err: Record<string, ErrorType>;
-  setErr: (key: string, value: ErrorType) => void;
+	err: Record<string, ErrorType>;
+	setErr: (key: string, value: ErrorType) => void;
 };

@@ -1,5 +1,5 @@
-import { ErrorState, LoadingState } from "@/config/Types";
 import { create } from "zustand";
+import type { ErrorState, LoadingState } from "@/config/Types";
 
 export const useLoading = create<LoadingState>((set) => ({
   loading: {},

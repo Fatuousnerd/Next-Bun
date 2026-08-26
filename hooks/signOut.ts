@@ -1,5 +1,5 @@
+import type { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { createSupabaseClient } from "@/lib/supabase/client";
-import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 type Props = {
   router: AppRouterInstance;

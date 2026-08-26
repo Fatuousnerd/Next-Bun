@@ -7,13 +7,11 @@ import {
 
 const AppSidebar = () => {
   return (
-    <>
-      <Sidebar>
-        <SidebarHeader></SidebarHeader>
-        <SidebarContent></SidebarContent>
-        <SidebarFooter></SidebarFooter>
-      </Sidebar>
-    </>
+    <Sidebar>
+      <SidebarHeader></SidebarHeader>
+      <SidebarContent></SidebarContent>
+      <SidebarFooter></SidebarFooter>
+    </Sidebar>
   );
 };
 

@@ -1,8 +1,8 @@
 "use client";
 
-import { ThemeType } from "@/config/Types";
-import { createContext, ReactNode, useEffect, useState } from "react";
 import Cookies from "js-cookie";
+import { createContext, type ReactNode, useEffect, useState } from "react";
+import type { ThemeType } from "@/config/Types";
 
 export const ThemeContext = createContext<ThemeType | null>(null);
 

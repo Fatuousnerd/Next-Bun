@@ -1,9 +1,9 @@
 "use client";
 
+import type { User } from "@supabase/supabase-js";
 import { useEffect, useMemo, useState } from "react";
 import { createSupabaseClient } from "@/lib/supabase/client";
-import { User } from "@supabase/supabase-js";
-import { useLoading } from "@/lib/zustand/store/stores";
+import { useLoading } from "@/lib/zustand/stores";
 
 export function useUser() {
   const supabase = useMemo(() => createSupabaseClient(), []);
@@ -27,7 +27,7 @@ export function useUser() {
         setLoad("user", false);
       }
     })();
-  }, []);
+  }, [setLoad, supabase.auth]);
 
   return { user };
 }
