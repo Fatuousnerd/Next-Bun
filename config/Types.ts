@@ -1,5 +1,5 @@
-import { PostgrestError } from "@supabase/supabase-js";
-import { AxiosError } from "axios";
+import type { PostgrestError } from "@supabase/supabase-js";
+import type { AxiosError } from "axios";
 
 export interface ThemeType {
 	theme: string;
